@@ -1,14 +1,11 @@
-# Getting-and-Cleaning-Data-Course-Project
-#Matthew L.
+Getting-and-Cleaning-Data-Course-Project
+Matthew L.
 ==================================================
 
 This is a script created for the course project that will read in the test and training data, combine them, rename variables replace the activity labels, and finally make a seperate tidy data set called "final table.txt". The script that runs the analysis on the Samsung data. The only prerequisite for the script to run properly is that the dataset is located within the working directory and that the names of the downloaded data remain unchanged. 
-===========================================================================================================================
-
-Files in Repository:
-"run_analysis.R" - This is a script created for the course project that will read in the test and training data, 
-                    combine them, rename variables, replace the activity labels, and finally make a seperate tidy 
-                    data set called "final table.txt". 
+=========================================================================================================================
+Files in Repository: 
+"run_analysis.R" - This is a script created for the course project that will read in the test and training data, combine                     them, rename variables, replace the activity labels, and finally make a seperate tidy dataset in a                       new file called "final table.txt"
 =========================================================================================================================
 How the script works:
 -The script starts by reading in both the training and test X data to seperate data frames
@@ -21,5 +18,3 @@ How the script works:
 -A new tidy dataset is made by first, melting "sub" and then recasting it so we get the average for each variable for
 every combination of subject and activity. 
 -Finally, this new dataframe called "casted" will be written to a text file called "final table.txt".
-
-
